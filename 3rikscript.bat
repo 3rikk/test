@@ -1,5 +1,6 @@
 @echo off
 #DO NOT USE THIS SCRIPT ALONE
+cd %appdata%
 goto online
 :online
 # ##Export to online version from here onwards##
