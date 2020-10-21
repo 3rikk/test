@@ -21,7 +21,6 @@ cls
 echo ===========================================================================================
 echo Version: Rolling (Online)
 echo Make sure this is being run as administrator!
-echo THIS IS A BETA VERSION OF THIS SCRIPT!
 echo Channel: Monthly
 echo Created by 3rik
 echo made with scripts by abbodi1406 (https://github.com/abbodi1406) and KMS Activator
