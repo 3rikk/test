@@ -2,6 +2,8 @@
 #DO NOT USE THIS SCRIPT ALONE
 goto online
 :online
+# ##Export to online version from here onwards##
+# ##(Thats for myself, dont worry if you have no idea what I mean)##
 cls
 :check_Permissions
         echo Administrative permissions required. 
@@ -19,11 +21,15 @@ cls
     )
 
 echo ===========================================================================================
-echo Version: Rolling (Online)
-echo Make sure this is being run as administrator!
+echo Version 1.2 OFFLINE
+echo Codeburg Edition
 echo Channel: Monthly
 echo Created by 3rik
 echo made with scripts by abbodi1406 (https://github.com/abbodi1406) and KMS Activator
+echo Always make sure you get this from the official source.
+echo Fake versions could have malicious code implanted into them.
+echo The original script is available at https://github.com/3rikk/officefree65/ 
+echo and https://codeberg.org/3rik/OfficeFree65/
 echo ===========================================================================================
 
 :start
@@ -52,7 +58,7 @@ goto start
 exit
 
 :deleteoldoffice
-curl -L -o officepurger.bat "https://raw.githubusercontent.com/3rikk/test/main/officepurger.bat"
+curl -L -o officepurger.bat "https://codeberg.org/3rik/OfficeFree65/raw/branch/main/Recources/officepurger.bat"
 call officepurger.bat
 goto :continue
 
@@ -60,12 +66,12 @@ goto :continue
 echo Installing Microsoft Office 365
 mkdir officeinstallation
 cd officeinstallation
-curl -L -o curlofficemonthly.bat https://raw.githubusercontent.com/3rikk/test/main/curlofficemonthly.bat
+curl -L -o curlofficemonthly.bat https://codeberg.org/3rik/OfficeFree65/raw/branch/main/Recources/curlofficemonthly.bat
 call curlofficemonthly.bat
 echo Starting Installation
 cd C2R_Monthly
-curl -L -o C2R_Config_20201021-1618.ini "https://raw.githubusercontent.com/3rikk/test/main/C2R_Config.ini"
-curl -L -o YAOCTRI_Installer.cmd "https://raw.githubusercontent.com/3rikk/test/main/YAOCTRI_Installer.cmd"
+curl -L -o C2R_Config_20201021-1618.ini "https://codeberg.org/3rik/OfficeFree65/raw/branch/main/Recources/C2R_Config.ini"
+curl -L -o YAOCTRI_Installer.cmd "https://codeberg.org/3rik/OfficeFree65/raw/branch/main/Recources/YAOCTRI_Installer.cmd"
 call YAOCTRI_Installer.cmd
 echo Activating Office
 echo It is reccomended to disable your antivirus. KMS activation often triggers them.
@@ -95,7 +101,7 @@ goto normalcontinue
 
 :normalcontinue
 cd ..
-curl -L -o KMS_VL_ALL_AIO.cmd "https://raw.githubusercontent.com/3rikk/test/main/KMS_VL_ALL_AIO.cmd"
+curl -L -o KMS_VL_ALL_AIO.cmd "https://codeberg.org/3rik/OfficeFree65/raw/branch/main/Recources/KMS_VL_ALL_AIO.cmd"
 echo Please wait while office is activated...
 call KMS_VL_ALL_AIO.cmd
 color a
