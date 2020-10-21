@@ -33,7 +33,7 @@ set uAutoRenewal=0
 set Silent=1
 
 :: change to 1 to redirect output to a text file, works only with Silent=1
-set Logger=1
+set Logger=0
 
 :: ### Advanced KMS Options ###
 
