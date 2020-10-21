@@ -21,7 +21,7 @@ curl.exe -q --create-dirs --retry 5 --retry-connrefused %speedLimit% -k -L -C - 
 if exist "%uri%" del /f /q "%uri%"
 echo.
 echo Done.
-echo Press any key to exit.
+echo Press any key to continue installation.
 popd
 pause >nul
 exit /b
